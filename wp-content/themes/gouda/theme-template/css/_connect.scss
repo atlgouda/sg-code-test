@@ -1,0 +1,147 @@
+.connect__body-wrap {
+    padding-bottom: 0;
+    border: none;
+}
+
+.connect__title-image-wrap {
+    max-width: 390px;
+}
+
+.connect__form-wrap {
+    padding: 40px 0 0;
+}
+
+.connect__form-fieldset {
+    @include font-scale(375px, 1440px, 20px, 30px);
+}
+
+.connect__input-wrap {
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.connect__form-label {
+    display: block;
+    padding-bottom: 6px;
+}
+
+.connect__form-input,
+.connect__input-select {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: $arial;
+    font-weight: 500;
+    color: $white;
+    @include font-scale(375px, 1440px, 20px, 30px);
+}
+
+.connect__input-select {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    cursor: pointer;
+}
+
+.connect__form-textarea {
+    resize: none;
+}
+
+.connect__input-cta {
+    -webkit-appearance: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: none;
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-small} {
+
+
+}
+
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-medium} {
+
+    .connect__form-fieldset {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .connect__input-wrap {
+        width: 47%;
+        line-height: 100%;
+        padding-bottom: 25px;
+
+        &--cta {
+            align-self: flex-end;
+            margin-bottom: 3px;
+        }
+    }
+
+    .connect__form-label {
+        padding-bottom: 10px;
+    }
+
+    .connect__input-cta {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-large} {
+
+
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-largest} {
+
+}
+
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media screen and (min-width: 1800px) {
+
+
+}
+
+
+
+@media (hover: hover) {
+
+}

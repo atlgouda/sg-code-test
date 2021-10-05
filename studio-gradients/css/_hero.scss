@@ -1,0 +1,154 @@
+.hero__body-wrap {
+    padding-top: 40px;
+}
+
+.hero__image-wrap {
+    position: relative;
+    max-width: 1800px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.hero__image {
+  width: 116%;
+  min-height: auto;
+  object-fit: cover;
+  position: relative;
+  left: -8%;
+}
+
+.hero__image-gradient {
+    position: absolute;
+    width: 100%;
+    height: 0.1px;
+    bottom: 15%;
+    transform: rotate(6deg);
+}
+
+.hero__copy-wrap {
+    margin-top: -30px;
+}
+
+.hero__copy-logo {
+    display: inline-block;
+    height: 18px;
+    fill: pink;
+
+    path {
+        -webkit-animation: bgcolor 30s infinite;
+         animation: bgcolor 30s infinite;
+         -webkit-animation-direction: alternate;
+         animation-direction: alternate;
+    }
+}
+
+.hero__copy {
+    padding: 30px 0 0;
+    text-align: center;
+}
+
+
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-medium} {
+
+    .hero__body-wrap {
+        padding-top: 0;
+    }
+
+    .hero__image-wrap {
+        padding-top: 35px;
+    }
+
+    .hero__image {
+      width: 85%;
+      left: 0%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .hero__image-gradient {
+        bottom: 10%;
+    }
+
+    .hero__copy {
+        display: block;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .hero__copy-logo {
+        height: 22px;
+    }
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-large} {
+
+    .hero__image-wrap {
+        padding-top: 0;
+    }
+
+    .hero__image {
+      width: 93%;
+    }
+
+    .hero__image-gradient {
+        bottom: 11%;
+    }
+
+    .hero__copy-logo {
+        height: 24px;
+    }
+
+    .hero__copy-wrap {
+        margin-top: -50px;
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-largest} {
+
+    .hero__copy-logo {
+        height: 26px;
+    }
+
+    .hero__copy-wrap {
+        margin-top: -66px;
+    }
+
+    .hero__copy {
+        padding: 37px 0 0;
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media screen and (min-width: 1800px) {
+
+    .hero__copy-logo {
+        height: 28px;
+    }
+}

@@ -1,0 +1,157 @@
+.footer__body-wrap {
+    padding: 40px 40px 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin: 0 30px;
+}
+
+.footer__logo-wrap {
+    width: 100%;
+}
+
+.footer__logo {
+    width: 80%;
+    max-width: 300px;
+    padding-bottom: 25px;
+}
+
+.footer__logo--white {
+
+}
+
+.footer__logo--black {
+
+}
+
+.footer__link-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__link-item {
+    @include font-scale(375px, 1440px, 20px, 26px);
+    line-height: 145%;
+    font-weight: normal;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.footer__item-link {
+
+    &:focus {
+        font-weight: bold;
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-small} {
+
+    .footer__link-item {
+        width: 40%;
+    }
+
+}
+
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-medium} {
+
+    .footer__body-wrap {
+        margin: 0 40px;
+        padding: 40px 40px 50px;
+    }
+
+    .footer__link-item {
+        width: 25%;
+        margin: 0;
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-large} {
+
+    .footer__body-wrap {
+        padding: 48px 40px 60px;
+        margin: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__logo-wrap {
+        width: 30%;
+    }
+
+    .footer__logo {
+        width: 100%;
+        max-width: 360px;
+        padding-bottom: 0;
+    }
+
+    .footer__link-wrap {
+        width: 60%;
+        max-width: 800px;
+        flex-wrap: nowrap;
+    }
+
+    .footer__link-item {
+        width: 22%;
+        text-align: center;
+        margin: 0;
+
+        &:last-of-type {
+            width: 30%;
+        }
+    }
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media #{$mq-largest} {
+
+    .footer__body-wrap {
+        margin: 0 48px;
+    }
+}
+
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+@media screen and (min-width: 1800px) {
+
+
+}
+
+
+
+@media (hover: hover) {
+
+    .footer__item-link:hover {
+        font-weight: bold;
+    }
+}
