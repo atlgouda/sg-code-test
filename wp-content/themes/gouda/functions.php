@@ -138,10 +138,3 @@ function gouda_widget_areas(){
 }
 
 add_action('widgets_init', 'gouda_widget_areas');
-
-
-
-
-
-
-?>
